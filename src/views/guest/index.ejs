@@ -1,0 +1,19 @@
+<%- include('../includes/head.ejs') %>
+
+<%- include('../includes/navigation.ejs') %>
+
+<h1>Personal Blog</h1>
+
+<% if (articleLength === 0) {%>
+  <h3>No articles</h3>
+<% } else { %>
+  <% for (const file of files) { %>
+    <div class="articles">
+      <p id="left"><a href="/home/article/<%= file.id %>"><%= file.title %></a></p>
+      <p id="rigth"><%= file.date %></p>
+    </div>
+  <% } %>
+<% } %>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.navigation {
+  background-color: green;
+  color: white;
+  font-size: large;
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.navigation-left {
+  display: flex;
+  justify-content: left;
+  width: 70%;
+  list-style: none;
+}
+
+.navigation-right {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  list-style: none;
+  padding-right: 40px;
+}
+
+.options {
+  padding: 0 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p > a {
+  color: black;
+}
+
+p > a:hover {
+  color: gray;
+}
+
+h1 {
+  padding: 0 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px;
+  font-size: x-large;
+}
+
+#left {
+  width: 50%;
+  text-align: left;
+}
+
+#rigth {
+  text-align: right;
+  padding-right: 10rem;
+  width: 50%;
+  color: gray;
+}
+
+.articles {
+  font-family: 'Merriweather', Serif;
+  width: auto;
+  padding-left: 15px;
+  display: flex;
+  margin: 5px 15px;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+#date {
+  text-align: center;
+  color: gray;
+  font-size: x-large;
+  font-style: italic;
+}
+
+#content {
+  font-size: larger;
+  width: 30%;
+  margin: 4rem auto;
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
+}

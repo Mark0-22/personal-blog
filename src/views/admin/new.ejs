@@ -1,0 +1,22 @@
+<%- include('../includes/article.ejs') %>
+
+<%- include('../includes/navigation.ejs') %>
+
+<h1><%= editing ? "Update Article" : "New Article" %></h1>
+
+<form class="article" action='/admin/<%= editing ? "edit" : "new" %>' method="POST">
+  <input type="text" name="title" placeholder="Article Title" value='<%= editing ? file.title : '' %>'>
+
+  <input type="date" name="date" placeholder="Publishing Date" value="<%= editing ? file.date : '' %>">
+
+  <textarea name="content" id="content-add" placeholder="Content"><%= editing ? file.content : '' %></textarea>
+
+  <% if (editing) { %>
+    <input type="hidden" name="id" value="<%= file.id %>">
+  <% } %>
+
+  <button type="submit"><% if (editing) { %> Update <% } else { %> Publish <% } %></button>
+</form>
+
+</body>
+</html>

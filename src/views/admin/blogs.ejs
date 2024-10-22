@@ -1,0 +1,25 @@
+<%- include('../includes/article.ejs') %>
+
+<%- include('../includes/navigation.ejs') %>
+
+<div class="admin-blogs">
+  <h1 id="header">Personal Blog</h1>
+  <h5 id="add-button"><a href="/admin/new">+ Add</a></h5>
+</div>
+
+<% if (articleLength === 0) {%>
+  <h3>No articles</h3>
+<% } else { %>
+  <% for (const file of files) { %>
+    <div class="articles">
+      <p id="left_article"><%= file.title %></p>
+      <div class="link-container">
+        <p id="edit_rigth"><a href="/admin/edit/<%= file.id %>">Edit</a></p>
+        <p id="delete_rigth"><a href="/admin/delete/<%= file.id %>">Delete</a></p>
+      </div>
+    </div>
+  <% } %>
+<% } %>
+
+</body>
+</html>

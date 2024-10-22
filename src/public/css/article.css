@@ -1,0 +1,102 @@
+button,
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 90%;
+  display: block;
+  justify-items: center;
+}
+
+textarea {
+  padding: 3rem 10px;
+  margin: 10px 0;
+  width: 90%;
+  display: block;
+}
+
+button {
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: cyan;
+  cursor: pointer;
+}
+
+.admin-blogs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#header {
+  text-align: left;
+  width: 100%;
+}
+
+#add-button {
+  text-align: right;
+  width: 10%;
+  font-size: larger;
+  margin-right: 5rem;
+}
+
+#add-button a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+
+#add-button a:hover {
+  color: red;
+}
+
+.article {
+  display: block;
+  margin: 3rem auto;
+  padding: 15px 30px;
+  justify-content: center;
+  width: 35%;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+#left_article {
+  text-align: left;
+  width: 50%;
+}
+
+.link-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+
+#delete_rigth,
+#edit_rigth {
+  color: gray;
+  width: 50%;
+  text-align: center;
+  padding-right: 15px;
+}
+
+#edit_rigth {
+  text-align: right;
+}
+
+#edit_rigth a,
+#delete_rigth a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#edit_rigth a:hover,
+#edit_rigth a:active,
+#delete_rigth a:hover,
+#delete_rigth a:active {
+  color: lightblue;
+}
